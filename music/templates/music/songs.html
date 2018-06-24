@@ -8,11 +8,10 @@
     <div class="row">
         <div class="col-sm-12">
             <ul class="nav nav-pills" style="margin-bottom: 10px;">
-                <li role="presentation"
-                    {% if filterBy == 'all' %}class="active"{% endif %}>
+                <li role="presentation" class="{% if filter_by == 'favorites' %}active{% endif %}">
                 <a href="{% url 'music:songs' 'all' %}">View All</a>
                 </li>
-                <li role="presentation" {% if filter_by == 'favorites' %}class="active"{% endif %}>
+                <li role="presentation" class="{% if filter_by == 'favorites' %}active{% endif %}">
                 <a href="{% url 'music:songs' 'favorites' %}">Favorites</a></li>
             </ul>
         </div>
@@ -35,7 +34,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            {% for song in song_list %}
+                            {% for song in songList %}
                                 <tr>
                                     <td>{{ song.songTitle }}</td>
                                     <td>{{ song.album.artist }}</td>
