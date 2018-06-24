@@ -91,7 +91,7 @@
                                             <a href="{% url 'music:albumDetails' song.album.id %}">
                                                 <img src="{{ song.album.albumLogo.url }}" class="img-responsive" style="width: 20px; float: left; margin-right: 10px;" />
                                             </a>
-                                            <a href="{% url 'music:albumDetails' song.album.id %}">{{ song.album.album_title }}</a>
+                                            <a href="{% url 'music:albumDetails' song.album.id %}">{{ song.album.albumTitle }}</a>
                                         </td>
                                         <td>
                                             <a href="{% url 'music:favoriteSong' song.id %}" class="btn-favorite"><span class="glyphicon glyphicon-star {% if song.isFavorite %}active{% endif %}"></span></a>
