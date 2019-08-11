@@ -1,11 +1,6 @@
 # Phenomony
 A Django Python web application that let's you upload, store, and play all of your music from the cloud. You can now manage and listen to your music from any device, anywhere in the world.
 
-
-# What is Phenomony?
-
-Viberr is an application that let's you upload, store, and play all of your music from the cloud. You can now manage and listen to your music from any device, anywhere in the world. 
-
 ![](http://i.imgur.com/9Ix2CbR.png)
 
 ## How does it work?
